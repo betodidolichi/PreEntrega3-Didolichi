@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+        "header header header" 115px
+        "main main main" auto
+        "footer footer footer" 80px /
+        1fr     1fr    1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2eadf;
+}
+
+main {
+    grid-area: main;
+    background-color: #d6cfc6;
+
+footer {
+    grid-area: footer;
+    background-color: #d6cfc6;
+}
+
+/*<!--Band contact-->*/
+.bandcontact {
+    background-color: #595048;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.bandcontact__relleno {
+    width: 1000px;
+}
+
+.bandcontact__email {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__phone {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__email img {
+    height: 10px;
+    padding-right: 3px;
+}
+
+.bandcontact__phone img {
+    height: 12px;
+    padding-right: 3px;
+}
+
+/*<!--Nav fixed-->*/
+.navfixed {
+    background-color: #f2eadf;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.navfixed__imglogo {
+    height: 50px;
+}
+
+.navfixed__imglogin {
+    height: 30px;
+}
+
+.navfixed__options {
+    display: flex;
+    list-style-type: none;
+    padding-right: 150px;
+}
+
+.navfixed__options li {
+    margin: 0 33px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+}
+
+.navfixed__options li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*<!--Main Body-->*/
+
+main {
+    display: grid;
+    grid-template: 
+    "mainbody mainvideo" auto /
+    2fr auto;
+    align-items: center;
+}
+
+.mainbody {
+    padding-left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+}
+
+.mainbody h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.mainbody p {
+    font-size: 34px;
+    font-weight: 100;
+    margin-top: -8px;
+}
+
+.mainbody button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: #8c837b;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.mainbody button:hover {
+    box-shadow: 0 0 15px #f2eadf;
+    scale: 1.01;
+}
+
+.mainbody button a{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+.mainvideo{
+    padding-right: 60px;
+} 
+
+.mainvideo iframe {
+    border-radius: 15px 0 15px 0;
+    transition: all 0.3s;
+}
+
+.mainvideo iframe:hover {
+    box-shadow: 0 0 5px #f2eadf;
+    scale: 1.01;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: #f2eadf;
+    width: 700px;
+    height: 580px;
+    margin:auto;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.register_creatucuenta {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.register_creatucuenta-p {
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.register_h3 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.register_input {
+    background-color: transparent;
+    border: 1px solid #949494;
+    height: 40px;
+}
+
+.register_button {
+    width: 150px;
+    height: 40px;
+}

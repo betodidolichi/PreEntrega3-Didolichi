@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+        "header header header" 115px
+        "main main main" auto
+        "footer footer footer" 80px /
+        1fr     1fr    1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2eadf;
+}
+
+main {
+    grid-area: main;
+    background-color: #d6cfc6;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #dad0c7;
+}
+
+/*<!--Band contact-->*/
+.bandcontact {
+    background-color: #595048;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.bandcontact__relleno {
+    width: 1000px;
+}
+
+.bandcontact__email {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__phone {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__email img {
+    height: 10px;
+    padding-right: 3px;
+}
+
+.bandcontact__phone img {
+    height: 12px;
+    padding-right: 3px;
+}
+
+/*<!--Nav fixed-->*/
+.navfixed {
+    background-color: #f2eadf;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.navfixed__imglogo {
+    height: 50px;
+}
+
+.navfixed__imglogin {
+    height: 30px;
+}
+
+.navfixed__options {
+    display: flex;
+    list-style-type: none;
+    padding-right: 150px;
+}
+
+.navfixed__options li {
+    margin: 0 33px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+}
+
+.navfixed__options li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*<!--Main Body (Login)-->*/
+
+article {
+    display: grid;
+    grid-template: 
+    "signin signup" auto
+    1fr      1fr;
+}
+
+.login_signin {
+    grid-area: signin;
+    background-color: #f2eadf;
+}
+
+.login_signup {
+    grid-area: signup;
+    
+}

@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #dad0c7
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+        "header header header" 115px
+        "main main main" auto
+        "footer footer footer" 80px /
+        1fr     1fr    1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2eadf;
+}
+
+.pagina1 {
+    grid-area: main;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #dad0c7;
+}
+
+.nav-item {
+    display: none;
+} 
+
+/*<!--Band contact-->*/
+
+.bandcontact2 {
+    display: none;
+}
+
+.bandcontact {
+    background-color: #595048;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.bandcontact__relleno {
+    width: 1000px;
+}
+
+.bandcontact__p {
+    margin-top: 19px
+}
+.bandcontact__email {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__email p {
+    margin-top: 19px
+}
+
+.bandcontact__phone {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__phone p {
+    margin-top: 19px
+}
+
+.bandcontact__email img {
+    height: 10px;
+    padding-right: 3px;
+}
+
+.bandcontact__phone img {
+    height: 12px;
+    padding-right: 3px;
+}
+
+/*<!--Nav fixed-->*/
+.navfixed {
+    background-color: #f2eadf;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.navfixed__imglogo {
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.navfixed__imglogo:hover {
+    scale: 1.01;
+}
+
+.navfixed__imglogin {
+    height: 30px;
+}
+
+.navfixed__options {
+    display: flex;
+    list-style-type: none;
+    padding-right: 150px;
+}
+
+.navfixed__options li {
+    margin: 0 33px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    margin-top: 19px
+    
+}
+
+.navfixed__options li:hover {
+    scale: 1.01;
+    text-shadow: 1px 1px 1px #8c837b6b;
+}
+
+.navfixed__options li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.navbar bg-body-tertiary {
+    display: none;
+}
+
+/*<!--Main Body-->*/
+.pagina1 {
+    display: grid;
+    grid-template: 
+    "mainbody mainvideo" auto /
+    2fr auto;
+    align-items: center;
+}
+
+.mainbody {
+    padding-left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+}
+
+.mainbody h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.mainbody p {
+    font-size: 34px;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+.mainbody button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: #8c837b;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.mainbody button:hover {
+    box-shadow: 0 0 15px #f2eadf;
+    scale: 1.01;
+}
+
+.mainbody button a{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+.mainvideo{
+    padding-right: 60px;
+} 
+
+.mainvideo iframe {
+    border-radius: 15px 0 15px 0;
+    transition: all 0.3s;
+}
+
+.mainvideo iframe:hover {
+    box-shadow: 0 0 5px #f2eadf;
+    scale: 1.01;
+}
+
+/*Register List*/
+
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: #f2eadf;
+    width: 700px;
+    height: 600px;
+    margin: 80px 500px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.333);
+    font-family: 'Epilogue', sans-serif;
+}
+
+.register_creatucuenta {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.register_creatucuenta-p {
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.register_h3 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-bottom: 1px;
+}
+
+.register_input {
+    background-color: transparent;
+    border: 1px solid #949494;
+    height: 40px;
+}
+
+.register_button {
+    background-color: #595048;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 150px;
+    height: 40px;
+    margin-top: 42px;
+    margin-left: 498px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.register_button:hover {
+    box-shadow: 0 0 5px #8c837b;
+    scale: 1.01;
+}
+
+/*Login and Register*/
+.pagina3 {
+    display: flex;
+}
+
+.yaestasregistrado {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: #f2eadf;
+    width: 600px;
+    height: 300px;
+    margin: 230px 170px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.333);
+    font-family: 'Epilogue', sans-serif;
+}
+
+.yaestasregistrado h1 {
+    font-size: 20px;
+}
+
+.yaestasregistrado p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: -5px;
+}
+
+.yaestasregistrado h3 {
+    font-size: 15px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.yaestasregistrado input {
+    background-color: transparent;
+    border: 1px solid #949494;
+    height: 40px;
+}
+
+.yaestasregistrado button {
+    background-color: #595048;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 150px;
+    height: 40px;
+    margin-top: 42px;
+    margin-left: 397px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.yaestasregistrado button:hover {
+    box-shadow: 0 0 5px #8c837b;
+    scale: 1.01;
+}
+
+.notenescuenta {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: #f2eadf;
+    width: 600px;
+    height: 300px;
+    margin-top: 230px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.333);
+    font-family: 'Epilogue', sans-serif;
+}
+
+.notenescuenta h2 {
+    font-size: 20px;
+}
+
+.notenescuenta p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: -5px;
+}
+
+.notenescuenta__beneficios {
+    display: flex;
+    flex-direction: row;
+    margin-left: -6px;
+}
+
+.notenescuenta span {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    margin: 6px;
+    width: 128px;
+    height: 120px;
+    border: 1px solid #949494;
+    transition: all 0.3s;
+}
+
+.notenescuenta span:hover {
+    scale: 1.01;
+    box-shadow: 0 0 5px #8c837b3a;
+}
+
+.notenescuenta span img {
+    width: 240px;
+    margin: -80px -70px;
+    padding-bottom: 10px;
+}
+
+.notenescuenta span h3 {
+    font-size: 13px;
+}
+
+.notenescuenta button {
+    background-color: #595048;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 150px;
+    height: 40px;
+    margin-top: 22px;
+    margin-left: 392px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.notenescuenta button a {
+    text-decoration: none;
+    color: white;
+}
+
+.notenescuenta button:hover {
+    box-shadow: 0 0 5px #8c837b;
+    scale: 1.01;
+}
+
+/*Biografía del dueño*/
+.main-aboutus {
+    grid-area: main;
+    background-image: url(/Home/images/fondo.jpg);
+    background-size: cover;
+}
+
+.footer-aboutus {
+    z-index: 1;
+    margin-top: -181px;
+    background-color: rgba(232.552, 223.039, 210.807, 1);
+}
+
+.biografia__dueño {
+    display: flex;
+    flex-direction: row;
+}
+
+.biografia__dueño-contenido {
+    display: flex;
+    flex-direction: column;
+    margin-top: -220px;
+    margin-left: -30px;
+    color: white;
+    width: 850px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.biografia__dueño-contenido h1 {
+    font-weight: 700;
+}
+
+.biografia__dueño-contenido h3 {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: -9px;
+}
+
+.biografia__dueño-contenido p {
+    font-weight: 200;
+    margin-top: 5px;
+    text-shadow:  0.1px 0.1px white;
+}
+
+.biografia__dueño img {
+    width: 450px;
+    margin-left: 150px;
+    margin-top: -350px;
+    margin-bottom: 300px;
+}
+
+.biografia__empresa {
+    color: white;
+    text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.418);
+    width: 1350px;
+    margin-top: -205px;
+    margin-left: 180px;
+}
+
+.biografia__empresa p {
+    font-weight: 200;
+    background-color: #8c837b9a;
+    font-size: 22px;
+    margin-top: -350px;
+
+}
+
+.ola-inferior {
+    margin-top: -210px;
+}
+
+@media (max-width: 360px) {
+
+    .grid-container {
+        display: grid;
+        grid-template: 
+            "header header header" 45px
+            "main main main" auto
+            "footer footer footer" 0px /
+            1fr     1fr    1fr;
+    }
+
+    .bandcontact {
+        display: none;
+    }
+
+    /*Band contact 2*/
+    .bandcontact2 {
+        background-color: #595048;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    
+    .bandcontact2__email {
+        display: none;
+        align-items: center;
+    }
+    
+    .bandcontact2__phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .bandcontact2__phone p {
+        margin-top: 19px
+    }
+    
+    .bandcontact2__email img {
+        height: 10px;
+        padding-right: 3px;
+    }
+    
+    .bandcontact2__phone img {
+        height: 12px;
+        padding-right: 3px;
+    }
+
+    /*<!--Nav fixed-->*/
+    .navfixed {
+        background-color: #f2eadf;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .navfixed__imglogo {
+        height: 25px;
+    }
+    
+    .navfixed__imglogin {
+        display: none;
+        height: 30px;
+    }
+    
+    .navfixed__options {
+        display: flex;
+        list-style-type: none;
+        padding-right: 150px;
+    }
+    
+    .navfixed__options li {
+        display: none;
+        margin: 0 33px;
+        font-family: 'Epilogue', sans-serif;
+        font-weight: 400;
+    }
+    
+    .navfixed__options li a {
+        text-decoration: none;
+        color: black;
+    }
+
+        /*<!--Main Body-->*/
+    .pagina1 {
+        display: grid;
+        grid-template: 
+        "mainbody" auto 
+        "mainvideo" auto/
+        1fr;
+        align-items: center;
+    }
+
+    .mainbody {
+        padding-left: 10px;
+        font-family: 'Epilogue', sans-serif;
+        color: white;
+    }
+
+    .mainbody h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
+    .mainbody p {
+        font-size: 12px;
+        font-weight: 100;
+        margin-top: -8px;
+        margin-left: 28px;
+    }
+
+    .mainbody button {
+        padding: 10px 40px;
+        margin-top: 10px;
+        margin-left: 85px;
+        font-size: 11px;
+        background-color: #8c837b;
+        border-radius: 15px;
+        border: none;
+        transition: all 0.3s;
+    }
+
+    .mainbody button:hover {
+        box-shadow: 0 0 15px #f2eadf;
+        scale: 1.01;
+    }
+
+    .mainbody button a{
+        font-family: 'Epilogue', sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        color: white;
+    }
+
+    .mainvideo{
+        display: none;
+    } 
+    
+    /*Register List*/
+    .register {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        background-color: #f2eadf;
+        width: 100%;
+        height: 500px;
+        margin: 150px 25px;
+        border: 1px solid white;
+        box-shadow: 1px 1px 1px black;
+        font-family: 'Epilogue', sans-serif;
+    }
+    
+    .register_creatucuenta {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .register_creatucuenta-p {
+        font-size: 12px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+    
+    .register_h3 {
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-bottom: 1px;
+    }
+    
+    .register_input {
+        background-color: transparent;
+        border: 1px solid #949494;
+        height: 40px;
+    }
+    
+    .register_button {
+        background-color: #595048;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        width: 100%;
+        margin-top: 42px;
+        margin-left: 0px;
+        border: none;
+        transition: all 0.3s;
+    }
+    
+    .register_button:hover {
+        box-shadow: 0 0 5px #8c837b;
+        scale: 1.01;
+    }
+
+
+    /*Bootstrap*/
+    .nav-item {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    /*Login and Register*/
+    .pagina3 {
+        display: block;
+    }
+    
+    .yaestasregistrado {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        background-color: #f2eadf;
+        width: 318px;
+        height: 300px;
+        margin: 60px 15px;
+        border: 1px solid white;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.333);
+        font-family: 'Epilogue', sans-serif;
+    }
+    
+    .yaestasregistrado h1 {
+        font-size: 15px;
+    }
+    
+    .yaestasregistrado p {
+        font-size: 10px;
+        font-weight: 200;
+        margin-top: -5px;
+    }
+    
+    .yaestasregistrado h3 {
+        font-size: 12px;
+        margin-bottom: 2px;
+        margin-top: 15px;
+    }
+    
+    .yaestasregistrado input {
+        background-color: transparent;
+        border: 1px solid #949494;
+        height: 40px;
+    }
+    
+    .yaestasregistrado button {
+        background-color: #595048;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        width: 122%;
+        height: 40px;
+        margin-top: 42px;
+        margin-left: -28px;
+        scale: 0.82;
+        border: none;
+        transition: all 0.3s;
+    }
+    
+    .yaestasregistrado button:hover {
+        box-shadow: 0 0 5px #8c837b;
+        scale: 0.83;
+    }
+    
+    .notenescuenta {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        background-color: #f2eadf;
+        width: 318px;
+        height: 300px;
+        margin: 0 15px;
+        border: 1px solid white;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.333);
+        font-family: 'Epilogue', sans-serif;
+    }
+    
+    .notenescuenta h2 {
+        font-size: 15px;
+    }
+    
+    .notenescuenta p {
+        font-size: 10px;
+        font-weight: 200;
+        margin-top: -5px;
+    }
+    
+    .notenescuenta__beneficios {
+        display: flex;
+        flex-direction: row;
+        margin-left: -70px;
+        scale: 0.59;
+    }
+    
+    .notenescuenta span {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        align-items: center;
+        margin: 6px;
+        width: 128px;
+        height: 120px;
+        border: 1px solid #949494;
+        transition: all 0.3s;
+    }
+    
+    .notenescuenta span:hover {
+        scale: 1.01;
+        box-shadow: 0 0 5px #8c837b3a;
+    }
+    
+    .notenescuenta span img {
+        width: 240px;
+        margin: -80px -70px;
+        padding-bottom: 10px;
+    }
+    
+    .notenescuenta span h3 {
+        font-size: 13px;
+    }
+    
+    .notenescuenta button {
+        background-color: #595048;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        width: 122%;
+        height: 40px;
+        margin-top: 42px;
+        margin-left: -28px;
+        border: none;
+        scale: 0.82;
+        transition: all 0.3s;
+    }
+    
+    .notenescuenta button a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .notenescuenta button:hover {
+        box-shadow: 0 0 5px #8c837b;
+        scale: 0.83;
+    }
+
+    /*Biografía del dueño*/
+.main-aboutus {
+    grid-area: main;
+    background-image: url(/Home/images/fondo.jpg);
+    background-size: cover;
+}
+
+.footer-aboutus {
+    display: none;
+    z-index: 1;
+    margin-top: -181px;
+    background-color: rgba(232.552, 223.039, 210.807, 1);
+}
+
+.biografia__dueño {
+    display: flex;
+    flex-direction: row;
+}
+
+.biografia__dueño-contenido {
+    display: flex;
+    flex-direction: column;
+    margin-top: -220px;
+    margin-left: -30px;
+    color: white;
+    width: 850px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.biografia__dueño-contenido h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 320px;
+}
+
+.biografia__dueño-contenido h3 {
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.biografia__dueño-contenido p {
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: -140px;
+    text-shadow:  0.1px 0.1px white;
+}
+
+.biografia__dueño img {
+    width: 200px;
+    margin-left: -10px;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.biografia__empresa {
+    color: white;
+    text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.418);
+    width: 380px;
+    margin-top: -500px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.biografia__empresa p {
+    font-weight: 200;
+    background-color: #8c837b9a;
+    font-size: 16px;
+    margin: 300px 30px 30px 30px;
+
+}
+
+.ola-superior {
+    display: none;
+}
+
+.ola-inferior {
+    display: none;
+    margin-top: -210px;
+}
+}
